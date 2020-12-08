@@ -3,22 +3,19 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro A, B, C, R, S, D;
+		real base,altura, area
 		
-		escreva("Numero A");
-		leia(A);
-		
-		escreva("Numero B");
-		leia(B);
-		
-		escreva("Numero A");
-		leia(C);
+		escreva("Qual é a base?")
+		leia(base)
 
-		R = (A+B)*(A+B);
-		S = (B+C)*(B*C);
-		D = ((R + S)/2);
+		escreva("Qual é a altura?")
+		leia(altura)
 
-		escreva("O valor é ", D);
+		se((base > 0) e (altura >0) ){
+			area = (base * altura)/2
+			escreva("A área é ", area)
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 263; 
+ * @POSICAO-CURSOR = 209; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

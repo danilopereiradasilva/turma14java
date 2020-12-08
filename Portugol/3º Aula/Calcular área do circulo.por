@@ -3,20 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		//variaveis
-		inteiro TempoEmDias;
-		inteiro ano, mes,dias
+		
+		real raio,areaCirculo
+		real PI
+		
+		escreva("Qual é o raio ")
+		leia(raio)
 
-		escreva("Quantos tempo em dias?")
-		leia(TempoEmDias)
+		areaCirculo = (raio * raio) * 3.14;
 
-		//processamentos
-		ano = TempoEmDias/ 365
-		mes = (TempoEmDias % 365)/30
-		dias = (TempoEmDias % 365)%30
-
-		escreva("Ano " + ano + " Mês " + mes + " Dias" + dias);
-
+		escreva("A área do raio ", areaCirculo)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 315; 
+ * @POSICAO-CURSOR = 113; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
